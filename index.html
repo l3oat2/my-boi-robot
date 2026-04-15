@@ -3,68 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boi Robot - หุ่นยนต์ส่งของอัจฉริยะ</title>
+    <title>Boi Robot - อนาคตของการส่งของคอนโด</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Kanit', sans-serif; background-color: #000; }
-        .gradient-bg { background: radial-gradient(circle at 80% 50%, #1a0505 0%, #000 100%); }
+        body { font-family: 'Kanit', sans-serif; background-color: #000; color: white; scroll-behavior: smooth; }
+        .red-glow { box-shadow: 0 0 20px rgba(220, 38, 38, 0.2); }
+        .card-dark { background: #0a0a0a; border: 1px solid #1a1a1a; transition: all 0.3s; }
+        .card-dark:hover { border-color: #dc2626; }
+        section { min-height: 100vh; display: flex; align-items: center; padding: 80px 20px; }
     </style>
 </head>
-<body class="text-white gradient-bg min-h-screen">
-    <nav class="flex justify-between items-center p-8 max-w-7xl mx-auto">
-        <div class="text-2xl font-bold flex items-center gap-2">
-            <span class="text-red-600">◆</span> BOI ROBOT
+<body>
+
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter text-red-600">BOI ROBOT</div>
+            <div class="hidden md:flex gap-8 text-sm font-light text-gray-400">
+                <a href="#features" class="hover:text-white">คุณสมบัติ</a>
+                <a href="#compare" class="hover:text-white">เปรียบเทียบ</a>
+                <a href="#reviews" class="hover:text-white">รีวิว</a>
+                <a href="#pricing" class="hover:text-white">ราคา</a>
+            </div>
+            <button class="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-bold">จองตอนนี้</button>
         </div>
-        <div class="hidden md:flex gap-8 text-sm text-gray-400">
-            <a href="#" class="hover:text-white">คุณสมบัติ</a>
-            <a href="#" class="hover:text-white">ข้อมูลจำเพาะ</a>
-            <a href="#" class="hover:text-white">ราคา</a>
-        </div>
-        <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg shadow-red-900/20">
-            จองเลยตอนนี้
-        </button>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-8 pt-20 grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6">
-            <div class="inline-flex items-center gap-2 bg-red-950/30 border border-red-900/50 rounded-full px-4 py-1 text-xs text-red-500">
-                <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-                ระบบควบคุมหุ่นยนต์อัจฉริยะรุ่นใหม่
+    <section id="hero" class="pt-32">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center w-full">
+            <div class="space-y-6">
+                <span class="text-red-500 text-sm font-bold tracking-widest">● NEXT-GEN DELIVERY</span>
+                <h1 class="text-6xl font-bold leading-tight">ไม่ต้องลงไปรับเอง<br><span class="text-red-600">ให้ Boi ไปส่งให้</span></h1>
+                <p class="text-gray-400 text-lg">หุ่นยนต์อัจฉริยะส่งอาหารและน้ำแพ็คจากไรเดอร์ถึงหน้าห้องคอนโด ปลอดภัย แม่นยำ และรวดเร็ว</p>
+                <div class="flex gap-4">
+                    <button class="bg-red-600 px-8 py-4 rounded-full font-bold">เริ่มใช้งานวันนี้</button>
+                    <button class="border border-white/20 px-8 py-4 rounded-full font-bold">▶ ชมการทำงาน</button>
+                </div>
             </div>
-            <h1 class="text-6xl md:text-7xl font-bold leading-tight">
-                ควบคุมได้<span class="text-red-600">เร็ว</span><br>เท่า ความคิด
-            </h1>
-            <p class="text-gray-400 text-lg max-w-md">
-                Boi: หุ่นยนต์ส่งน้ำแพ็คและอาหารจากไรเดอร์ถึงหน้าห้องคอนโดคุณโดยเฉพาะ 
-                ทำงานเร็วขึ้น สุขภาพดีขึ้น ไม่ต้องลงไปรับเองให้เหนื่อย
-            </p>
-            <div class="flex gap-4 pt-4">
-                <button class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-bold flex items-center gap-2 transition-all">
-                    จองหุ่นยนต์ของคุณ <span>›</span>
-                </button>
-                <button class="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-full font-bold transition-all">
-                    ▶ ชมการสาธิต
-                </button>
+            <div class="bg-zinc-900 rounded-3xl aspect-square flex items-center justify-center red-glow border border-red-900/30">
+                <p class="text-gray-600 text-sm"><img src="robot.png" class="w-full"></p>
             </div>
         </div>
+    </section>
 
-        <div class="relative">
-            <div class="bg-zinc-900 rounded-3xl p-8 aspect-square flex items-center justify-center border border-white/5 shadow-2xl">
-                <img src="https://via.placeholder.com/600x600/111/fff?text=BOI+ROBOT" alt="Boi Robot" class="rounded-2xl shadow-inner">
-                
-                <div class="absolute bottom-12 left-12 right-12 bg-black/80 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex justify-between">
-                    <div>
-                        <div class="text-xs text-gray-500 uppercase">สถานะการส่ง</div>
-                        <div class="text-xl font-bold">12 <span class="text-xs text-gray-500 font-normal">นาทีถึงเป้าหมาย</span></div>
+    <section id="features" class="bg-zinc-950">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center w-full">
+            <div>
+                <h2 class="text-4xl font-bold mb-10 text-gray-500 italic">การรับของแบบเดิม <br><span class="text-white not-italic">กำลังขโมยเวลาของคุณ</span></h2>
+                <div class="space-y-4">
+                    <div class="card-dark p-6 rounded-2xl flex gap-4 items-center opacity-60">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-gray-500">✕</div>
+                        <div>
+                            <h4 class="font-bold">เสียเวลาลงไปรอไรเดอร์</h4>
+                            <p class="text-xs text-gray-500">เฉลี่ยคนคอนโดเสียเวลา 15 นาทีต่อการสั่งหนึ่งครั้ง</p>
+                        </div>
                     </div>
-                    <div>
-                        <div class="text-xs text-gray-500 uppercase">แบตเตอรี่</div>
-                        <div class="text-xl font-bold text-green-500">98%</div>
+                    <div class="card-dark p-6 rounded-2xl flex gap-4 items-center opacity-60 text-red-400">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-gray-500">✕</div>
+                        <div>
+                            <h4 class="font-bold">เสี่ยงต่อความไม่ปลอดภัย</h4>
+                            <p class="text-xs text-gray-500">การเดินในที่สาธารณะยามวิกาลหรือลิฟต์ที่แออัด</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-red-950/20 border border-red-600 p-10 rounded-[40px] relative overflow-hidden">
+                <h3 class="text-3xl font-bold mb-8">วิวัฒนาการของ <span class="text-red-500">Boi</span></h3>
+                <div class="space-y-6 relative z-10">
+                    <div class="bg-red-600 p-6 rounded-2xl">
+                        <h4 class="font-bold">ระบบนำทางอัจฉริยะ</h4>
+                        <p class="text-sm text-red-100">ขึ้นลิฟต์เองได้ ไม่ต้องรอคนกดให้ ทำงานร่วมกับระบบคอนโด 100%</p>
+                    </div>
+                    <div class="bg-zinc-900/80 p-6 rounded-2xl border border-red-600/50">
+                        <h4 class="font-bold text-red-500">ตรวจสอบความปลอดภัย</h4>
+                        <p class="text-sm text-gray-400">ระบบสแกนใบหน้าและรหัสผ่านก่อนรับของ มั่นใจของไม่หาย</p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <section id="compare">
+        <div class="max-w-4xl mx-auto w-full text-center">
+            <h2 class="text-4xl font-bold mb-16">ทำไมต้องเลือก <span class="text-red-600">Boi Robot</span>?</h2>
+            <div class="overflow-hidden rounded-2xl border border-white/5">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-zinc-900 text-gray-400">
+                        <tr>
+                            <th class="p-4">ความสามารถ</th>
+                            <th class="p-4">รับเอง</th>
+                            <th class="p-4 text-red-500">Boi Robot</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr><td class="p-4">ความสะดวกสบาย</td><td class="p-4 text-gray-600">ต่ำ</td><td class="p-4 text-red-500 font-bold">✓ สูงสุด</td></tr>
+                        <tr><td class="p-4">การประหยัดเวลา</td><td class="p-4 text-gray-600">เสียเวลา 15-20 นาที</td><td class="p-4 text-red-500 font-bold">✓ 0 นาที</td></tr>
+                        <tr><td class="p-4">ความปลอดภัย</td><td class="p-4 text-gray-600">ปานกลาง</td><td class="p-4 text-red-500 font-bold">✓ สูงมาก</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-zinc-950">
+        <div class="max-w-7xl mx-auto w-full text-center">
+            <h2 class="text-4xl font-bold mb-4">เลือก <span class="text-red-600">แผนการรับใช้</span> ของคุณ</h2>
+            <p class="text-gray-500 mb-12">จำนวนจำกัดสำหรับคอนโดนำร่อง 10 แห่งแรกเท่านั้น</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card-dark p-10 rounded-[30px] text-left">
+                    <h3 class="text-xl font-bold mb-2">รุ่นรายเดือน</h3>
+                    <div class="text-5xl font-bold mb-6">399 <span class="text-lg font-normal text-gray-500">บาท/เดือน</span></div>
+                    <ul class="space-y-3 mb-10 text-gray-400">
+                        <li>✓ ส่งของไม่จำกัดจำนวนครั้ง</li>
+                        <li>✓ ระบบแจ้งเตือนผ่าน Line</li>
+                        <li>✓ ประกันของเสียหาย 100%</li>
+                    </ul>
+                    <button class="w-full border border-white/20 py-4 rounded-xl font-bold hover:bg-white/5">สมัครเลย</button>
+                </div>
+                <div class="bg-red-600 p-10 rounded-[30px] text-left shadow-[0_0_40px_rgba(220,38,38,0.4)] relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-white text-red-600 text-[10px] font-bold px-2 py-1 rounded">ยอดนิยม</div>
+                    <h3 class="text-xl font-bold mb-2">รุ่นซื้อขาด</h3>
+                    <div class="text-5xl font-bold mb-6">15,900 <span class="text-lg font-normal text-red-200">บาท</span></div>
+                    <ul class="space-y-3 mb-10 text-red-100">
+                        <li>✓ เป็นเจ้าของหุ่นยนต์ส่วนตัว</li>
+                        <li>✓ แท่นชาร์จอัตโนมัติ</li>
+                        <li>✓ อัปเกรดซอฟต์แวร์ AI ตลอดชีพ</li>
+                    </ul>
+                    <button class="w-full bg-white text-red-600 py-4 rounded-xl font-bold shadow-xl">จองสิทธิ์ตอนนี้</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+            <div class="col-span-2">
+                <div class="text-2xl font-bold text-red-600 mb-4">BOI ROBOT</div>
+                <p class="text-gray-500 text-sm max-w-xs">กำหนดขอบเขตใหม่ของการใช้ชีวิตในเมือง เชื่อมต่อคุณกับอาหารมื้ออร่อยโดยไม่ต้องก้าวออกจากห้อง</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">ผลิตภัณฑ์</h4>
+                <ul class="text-gray-500 space-y-2 text-sm">
+                    <li>หุ่นยนต์ Boi v1</li>
+                    <li>ระบบ Smart Condo</li>
+                    <li>แอปสุขภาพ</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">บริษัท</h4>
+                <ul class="text-gray-500 space-y-2 text-sm">
+                    <li>เกี่ยวกับเรา</li>
+                    <li>ติดต่อสอบถาม</li>
+                    <li>นโยบายความเป็นส่วนตัว</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/5 text-gray-600 text-xs flex justify-between">
+            <p>© 2026 BOI ROBOT LABS. สงวนลิขสิทธิ์</p>
+            <div class="flex gap-4">
+                <span>FB</span> <span>TW</span> <span>IG</span>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
