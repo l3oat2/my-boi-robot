@@ -7,46 +7,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Kanit', sans-serif; background-color: #48cfcb; color: white; scroll-behavior: smooth; }
-        .red-glow { box-shadow: 0 0 20px #e0e0e0; }
+        body { font-family: 'Kanit', sans-serif; background-color: #ffffff; color: white; scroll-behavior: smooth; }
+        .red-glow { box-shadow: 0 0 20px #8dc0c7; }
         .card-dark { background: #e0e0e0; border: 1px solid #acacac; transition: all 0.3s; }
-        .card-dark:hover { border-color: #48cfcb; }
+        .card-dark:hover { border-color: #000000; }
         section { min-height: 100vh; display: flex; align-items: center; padding: 80px 20px; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+    <nav class="fixed w-full z-50 bg-[#00000] backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter text-red-600">BOI ROBOT</div>
-            <div class="hidden md:flex gap-8 text-sm font-light text-gray-400">
-                <a href="#features" class="hover:text-white">คุณสมบัติ</a>
-                <a href="#compare" class="hover:text-white">เปรียบเทียบ</a>
+            <div class="text-3xl font-bold text-[#00fff7] [text-shadow:2px_2px_4px_rgba(0,0,0,0.8)]">Boi</div>
+            <div class="hidden md:flex gap-8 text-sm font-light text-black">
+                <a href="#features" class="hover:text-[#00fff7]">คุณสมบัติ</a>
+                <a href="#compare" class="hover:text-[#00fff7]">เปรียบเทียบ</a>
                 <!-- <a href="#reviews" class="hover:text-white">รีวิว</a> -->
-                <a href="#pricing" class="hover:text-white">ราคา</a>
+                <a href="#pricing" class="hover:text-[#00fff7]">ราคา</a>
             </div>
-            <button class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-bold">จองตอนนี้</button>
+            <button class="bg-[#00fff7] text-black px-5 py-2 rounded-full text-sm font-bold">สนใจติดต่อ</button>
         </div>
     </nav>
 
     <section id="hero" class="pt-32">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center w-full">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-1 gap-10 items-center w-full">
             <div class="space-y-6">
-                <span class="text-red-500 text-sm font-bold tracking-widest">● NEXT-GEN DELIVERY</span>
-                <h1 class="text-6xl font-bold leading-tight">ไม่ต้องลงไปรับเอง<br><span class="text-red-600">ให้ Boi ไปส่งให้</span></h1>
-                <p class="text-gray-400 text-lg">หุ่นยนต์อัจฉริยะส่งอาหารและน้ำแพ็คจากไรเดอร์ถึงหน้าห้องคอนโด ปลอดภัย แม่นยำ และรวดเร็ว</p>
+                <span class="text-[#000000] text-sm font-bold tracking-widest">● NEXT-GEN DELIVERY</span>
+                <h1 class="text-8xl font-bold leading-tight">
+                    <span style="color: #000000;">ใช้งาน</span> <span style="color: #48cfcb;">Boi</span><br>
+                    <span class="text-black">ไม่ต้องลงไปรับเอง</span>
+                </h1>
+                <p class="text-[#48cfcb] text-lg">แพลตฟอร์มส่งของที่มีความปลอดภัยถึงหน้าประตูที่จะเปลี่ยนวิถีชีวิตชาวคอนโดไปตลอดกาล</p>
                 <div class="flex gap-4">
-                    <button class="bg-red-600 px-8 py-4 rounded-full font-bold">เริ่มใช้งานวันนี้</button>
-                    <button class="border border-white/20 px-8 py-4 rounded-full font-bold">▶ ชมการทำงาน</button>
+                    <button class="bg-[#00fff7] text-black px-8 py-4 rounded-full text-xl font-bold">ค้นหาพื้นที่ให้บริการ</button>
+                    <!-- <button class="border border-white/20 px-8 py-4 rounded-full font-bold">▶ ชมการทำงาน</button> -->
                 </div>
             </div>
-            <div class="bg-zinc-900 rounded-3xl aspect-square flex items-center justify-center red-glow border border-red-900/30">
-                <p class="text-gray-600 text-sm"><img src="robot.png" class="w-full"></p>
+            <div class="absolute bottom-0 left-[70%] transform -translate-x-1/2 w-fit z-40 pb-0">
+                <img src="robots2.png" class="block w-[500px] h-auto">
             </div>
         </div>
     </section>
 
-    <section id="features" class="bg-zinc-950">
+    <section id="features" class="bg-[#8dc0c7]">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center w-full">
             <div>
                 <h2 class="text-4xl font-bold mb-10 text-gray-500 italic">การรับของแบบเดิม <br><span class="text-white not-italic">กำลังขโมยเวลาของคุณ</span></h2>
@@ -54,29 +57,29 @@
                     <div class="card-dark p-6 rounded-2xl flex gap-4 items-center opacity-60">
                         <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-gray-500">✕</div>
                         <div>
-                            <h4 class="font-bold">เสียเวลาลงไปรอไรเดอร์</h4>
-                            <p class="text-xs text-gray-500">เฉลี่ยคนคอนโดเสียเวลา 15 นาทีต่อการสั่งหนึ่งครั้ง</p>
+                            <h4 class="font-bold text-red-600">เสียเวลาลงไปรอไรเดอร์</h4>
+                            <p class="text-xs text-black">เฉลี่ยคนคอนโดเสียเวลา 15 นาทีต่อการสั่งหนึ่งครั้ง</p>
                         </div>
                     </div>
                     <div class="card-dark p-6 rounded-2xl flex gap-4 items-center opacity-60 text-red-400">
                         <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-gray-500">✕</div>
                         <div>
-                            <h4 class="font-bold">เสี่ยงต่อความไม่ปลอดภัย</h4>
-                            <p class="text-xs text-gray-500">การเดินในที่สาธารณะยามวิกาลหรือลิฟต์ที่แออัด</p>
+                            <h4 class="font-bold text-red-600">เสี่ยงต่อความไม่ปลอดภัย</h4>
+                            <p class="text-xs text-black">การเดินในที่สาธารณะยามวิกาลหรือลิฟต์ที่แออัด</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-red-950/20 border border-red-600 p-10 rounded-[40px] relative overflow-hidden">
-                <h3 class="text-3xl font-bold mb-8">วิวัฒนาการของ <span class="text-red-500">Boi</span></h3>
+            <div class="bg-[#ffffff] border border-white-600 p-10 rounded-[40px] relative overflow-hidden">
+                <h3 class="text-3xl font-bold mb-8 text-[#00fff7]">วิวัฒนาการของ <span class="text-blue-00">Boi</span></h3>
                 <div class="space-y-6 relative z-10">
-                    <div class="bg-red-600 p-6 rounded-2xl">
-                        <h4 class="font-bold">ระบบนำทางอัจฉริยะ</h4>
-                        <p class="text-sm text-red-100">ขึ้นลิฟต์เองได้ ไม่ต้องรอคนกดให้ ทำงานร่วมกับระบบคอนโด 100%</p>
+                    <div class="bg-[#00fff7] p-6 rounded-2xl">
+                        <h4 class="font-bold text-black">ระบบนำทางอัจฉริยะ</h4>
+                        <p class="text-sm text-black">ขึ้นลิฟต์เองได้ ไม่ต้องรอคนกดให้ ทำงานร่วมกับระบบคอนโด 100%</p>
                     </div>
-                    <div class="bg-zinc-900/80 p-6 rounded-2xl border border-red-600/50">
-                        <h4 class="font-bold text-red-500">ตรวจสอบความปลอดภัย</h4>
-                        <p class="text-sm text-gray-400">ระบบสแกนใบหน้าและรหัสผ่านก่อนรับของ มั่นใจของไม่หาย</p>
+                    <div class="bg-zinc-900/80 p-6 rounded-2xl">
+                        <h4 class="font-bold text-[#00fff7]">ความปลอดภัยและความเป็นส่วนตัวสูง</h4>
+                        <p class="text-sm text-white">ระบบกดรับสินค้าผ่านแอพพลิเคชั่น มั่นใจของไม่หาย</p>
                     </div>
                 </div>
             </div>
